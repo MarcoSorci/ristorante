@@ -1,0 +1,24 @@
+h1{ /* all H1s */
+    color: crimson;
+    background-color: indigo;
+    width: 50%;
+    height: 50px;
+    overflow: hidden; /* hidden : hides the overflown content, scroll : makes overflown content scrollable
+    (can constrain to one axis) */
+    /* min-width: 200px;
+    max-width: 400px;
+    height: 500px; */
+    margin: 20px; /*around container*/
+    padding: 20px; /*within container*/
+    /*margin-top: 200px; only on one side (the top)*/
+    /*margin: 20px 10px 15px 5px; senso orario for the sides*/
+    /*margin: 20px 10px; first both vertical, second both horizontal*/
+} 
+
+.header-subtitle{ /* only the ones with the class */
+    color: greenyellow;
+}
+
+#test{ /* only the one with ID, it's unique, rarely used in html, more in js */
+    color: hotpink;
+}
