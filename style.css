@@ -1,123 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Sacramento&display=swap');
 
 body{
     font-family: 'Amiri', serif;
+    margin: 0px;
+    padding: 0px;
 }
-/*fonts, serif has dashes at the bottom of each letter, sans serif doesn't,
-display is for impact text, monospace is for code and each letter occupies same space*/
-/*on google fonts for italics always get the same, bold doesn't necessarily have to be bold
-(choose in relation to regular's thickness)
-<link> has to be put in all pages, @import only in css without style tags*/
 
-h1{ /* all H1s */
-    color: white;
+.header-title{
+     font-family: 'Sacramento', cursive;
+     background-image: url(./imgs/header.jpg);
+     background-position: bottom;
+     color: white;
+     min-height: 200px;
+     background-size: cover;
+     padding: 50px;
+     text-align: center;
+     margin: 0px;
+     font-size: 62px;
+}
+
+.nav-menu{
+    background-color: #473e36;
+    padding: 15px;
     text-align: center;
-    background-color: indigo;
-    width: 50%;
-    height: 100px;
-    overflow: hidden; /* hidden : hides the overflown content, scroll : makes overflown content scrollable
-    (can constrain to one axis) */
-    /* min-width: 200px;
-    max-width: 400px;
-    height: 500px; */
-
-    margin: 20px; /*around container*/
-    padding: 20px; /*within container*/
-    /*margin-top: 200px; only on one side (the top)*/
-    /*margin: 20px 10px 15px 5px; senso orario for the sides*/
-    /*margin: 20px 10px; first both vertical, second both horizontal*/
-
-    /* border-style: solid; by default same color as tag
-    border-color: pink;
-    border-width: 20px; thickness */
-    /*border-radius: 20px; */
-    border: solid 5px rgb(138, 77, 138); /*stylistically rather use no border, only radius*/
-    /* border-top-left-radius: 20px; */
-    border-radius: 20px 30px 0px 100px;
-
-    background-image: url(./imgs/nels.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-
-} 
+}
 
 .nav-link{
-    display: inline-block; /*block a capo, inline.. inline*/
-    background-color: rgb(209, 152, 152); /*block color extends as it can*/
-    width: 100px; /*inline ignores it, need inline-block*/
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    text-decoration: none; /*removes underline*/
+    border-style: solid;
+    border-radius: 5px;
+    padding: 4px;
+    display: inline-block;
+    width: 100px;
+
+}
+
+footer{
+    background-color: #313131; /*and #414141 are standard dark greys*/
+    padding: 16px;
+}
+
+.footer-text{ /*needed because it's the paragraph IN footer, not footer as its own*/
+    margin: 0px;
+    color: white;
+    font-size: 18px;
     text-align: center;
-    color: darkred;
 }
 
-.header-subtitle{ /* only the ones with the class */
-    color: greenyellow;
+section{
+    max-width: 800px;
+    margin: auto; /*basically centers it*/
 }
 
-#test{ /* only the one with ID, it's unique, rarely used in html, more in js */
-    color: hotpink;
+.home-image{
+    width: 100%;
 }
 
-.t1{
-    background-color: tomato;
-    margin: 0px;
-    position: relative; /*relative to original position*/
-    left: 20px;
-    top: 20px;
-    height: 100px;
+.price-table{
+    border: solid;
 }
 
-.t2{
-    background-color: orange;
-    margin: 0px;
-    height: 100px;
+.price-table td{
+    border-style: solid;
+    border-width: 1px;
 }
 
-.t3{
-    background-color: yellow;
-    margin: 0px;
-    position: absolute; /*over others and they ignore its presence*/
-    top: 0px;
-    right: 0px;
-    height: 100px;
+.gallery-img{
+    width: 32%;
 }
 
-.t4{
-    background-color: green;
-    margin: 0px;
-    height: 100px;
+.gallery-video{
+    width: 100%;
+    height: 400px;
 }
 
-.t5{
-    background-color: cyan;
-    margin: 0px;
-    height: 100px;
+.map{
+    width: 100%;
+    height: 400px;
 }
-
-.t6{
-    background-color: indigo;
-    margin: 0px;
-    height: 100px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-}
-
-.t7{
-    background-color: violet;
-    margin: 0px;
-    height: 100px;
-    position: absolute;
-    top: 0px;
-    left: 200px;
-
-}
-
-.t7-container{
-    background-color: yellowgreen;
-    height: 200px;
-    position: relative; /*contains absolutes that are within*/
-}
-
-
