@@ -1,0 +1,39 @@
+.redbox{
+ background-color: red;
+ padding: 30px;
+ flex-grow: 1;
+}
+
+
+.greenbox{
+background-color: green;
+padding: 30px;
+/* order: 3; */
+flex-grow: 3; /*grows x times in comparison to the others*/
+min-width: 300px;
+}
+
+
+.bluebox{
+background-color: blue;
+padding: 30px;
+flex-grow: 6; /*proportionally too*/
+min-width: 300px;
+}
+
+.boxsize{
+    /* height: 100px; */
+    width: 100px;
+}
+
+
+.box-container{
+    height: 600px;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+}
