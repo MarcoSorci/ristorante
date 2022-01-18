@@ -1,0 +1,66 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0px;
+    height: 100%;
+}
+
+.item1{
+    background-color: red;
+    grid-area: footer;
+}
+
+.item2{
+    background-color: orange;
+    grid-area: left;
+}
+
+.item3{
+    background-color: yellow;
+    grid-area: right;
+}
+
+.item4{
+    background-color: green;
+    grid-area: center;
+}
+
+.item5{
+    background-color: blue;
+    grid-area: header;
+   /* grid-column: 1 / 3; /*the second number is the one it arrives in NOT including (say 4 to fill 1-3)
+    grid-row: 1; */
+}
+
+.item6{
+    background-color: purple;
+    grid-area: link;
+}
+
+.child{
+    height: 100%;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr; /*each column size, each number creates one column, can be incremental with "fr"
+    (can also set one fixed size and the other in fr), relates to child height-width value (creates empty space if too small)*/
+    grid-template-rows: 300px 1fr 200px; /*same but for rows*/
+    /*gap: 4px 8px; like padding basically, first on row second on column*/
+    grid-template-areas: "header header header"
+                         "left center right"
+                         "footer footer link"; /*semantically call them by name, doesn't necessarily need linebreak but makes it easier to see*/
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .gridcontainer{
+        grid-template-rows: 200px 100px 1fr 100px 150px;
+        grid-template-areas: "header header header"
+                         "left left left"
+                         "center center center"
+                         "link link link"
+                         "footer footer footer";
+    }
+}
